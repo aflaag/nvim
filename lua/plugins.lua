@@ -1,5 +1,3 @@
--- TODO: automate CocInstall coc-rust-analyzer
-
 return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
     use 'nvim-tree/nvim-web-devicons'

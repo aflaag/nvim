@@ -60,6 +60,8 @@
                 vim.api.nvim_command('nnoremap <Tab> >>')
                 vim.api.nvim_command('nnoremap <S-Tab> <<')
 
+                vim.api.nvim_command('nnoremap cq :bdelete<CR>')
+
             -- Insert
 
                 vim.api.nvim_command('inoremap jj <Esc>')
