@@ -1,4 +1,4 @@
-# .config-nvim
+# nvim
 
 - general
     - cool buffer switch
