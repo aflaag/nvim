@@ -11,7 +11,7 @@ return require('packer').startup(function()
     use { 'junegunn/fzf.vim' }
     use { 'mg979/vim-visual-multi', branch = 'master' }
     use 'lewis6991/gitsigns.nvim'
-    use { 'akinsho/bufferline.nvim', tag = "v2.*", requires = 'nvim-tree/nvim-web-devicons' }
+    use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' }
     use 'numToStr/Comment.nvim'
     use { 'folke/todo-comments.nvim', requires = 'nvim-lua/plenary.nvim' }
     use { "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, }
