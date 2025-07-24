@@ -1,11 +1,12 @@
 -- IMPORTS
 
-    require("plugins")
-    require("nvim-tree-config")
-    require("gitsigns-config")
-    require("bufferline-config")
-    require("Comment-config")
-    require("todo-comments-config")
+    require("config.lazy")
+
+    require("plugins.nvim-tree-config")
+    require("plugins.gitsigns-config")
+    require("plugins.bufferline-config")
+    require("plugins.Comment-config")
+    require("plugins.todo-comments-config")
 
 -- GENERAL
 
