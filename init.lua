@@ -7,6 +7,7 @@
     require("plugins.bufferline-config")
     require("plugins.Comment-config")
     require("plugins.todo-comments-config")
+    require("plugins.nvim-colorizer-config")
 
 -- GENERAL
 

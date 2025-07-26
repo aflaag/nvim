@@ -36,11 +36,17 @@ local plugins = {
     { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
     'numToStr/Comment.nvim',
     { 'folke/todo-comments.nvim', dependencies = 'nvim-lua/plenary.nvim' },
-
     {
-    "iamcco/markdown-preview.nvim",
-    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-    ft = { "markdown" },build = function() vim.fn["mkdp#util#install"]() end,},
+      "iamcco/markdown-preview.nvim",
+      cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+      ft = { "markdown" }, build = function()
+        vim.fn["mkdp#util#install"]()
+      end
+    },
+    {
+      "catgoose/nvim-colorizer.lua",
+      event = "BufReadPre",
+    },
     'lervag/vimtex',
 }
 
