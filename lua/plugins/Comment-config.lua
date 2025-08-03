@@ -1,14 +1,13 @@
-require('Comment').setup({
-    toggler = {
-        line = 'sc',
-    },
-    opleader = {
-        line = 'ssc',
-        block = 'fc',
-    },
+require("Comment").setup({
+  toggler = {
+    line = "sc",
+  },
+  opleader = {
+    line = "ssc",
+    block = "fc",
+  },
 })
 
-local ft = require('Comment.ft')
+local ft = require("Comment.ft")
 
-ft
-    .set('sml', {'(*%s*)', '(*%s*)'})
+ft.set("sml", { "(*%s*)", "(*%s*)" })

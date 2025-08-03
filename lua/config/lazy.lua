@@ -22,50 +22,51 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 local plugins = {
-    'nvim-tree/nvim-web-devicons',
-    { 'nvim-tree/nvim-tree.lua', dependencies = 'nvim-tree/nvim-web-devicons' },
-    { 'neoclide/coc.nvim', branch = 'release' },
-    'vim-airline/vim-airline',
-    'vim-airline/vim-airline-themes',
-    'ap/vim-css-color',
-    'morhetz/gruvbox',
-    { 'mg979/vim-visual-multi', branch = 'master' },
-    'lewis6991/gitsigns.nvim',
-    { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
-    'numToStr/Comment.nvim',
-    { 'folke/todo-comments.nvim', dependencies = 'nvim-lua/plenary.nvim' },
-    {
-      "iamcco/markdown-preview.nvim",
-      cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-      ft = { "markdown" }, build = function()
-        vim.fn["mkdp#util#install"]()
-      end
+  "nvim-tree/nvim-web-devicons",
+  { "nvim-tree/nvim-tree.lua", dependencies = "nvim-tree/nvim-web-devicons" },
+  { "neoclide/coc.nvim", branch = "release" },
+  "vim-airline/vim-airline",
+  "vim-airline/vim-airline-themes",
+  "ap/vim-css-color",
+  "morhetz/gruvbox",
+  { "mg979/vim-visual-multi", branch = "master" },
+  "lewis6991/gitsigns.nvim",
+  { "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
+  "numToStr/Comment.nvim",
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function()
+      vim.fn["mkdp#util#install"]()
+    end,
+  },
+  {
+    "catgoose/nvim-colorizer.lua",
+    event = "BufReadPre",
+  },
+  "lervag/vimtex",
+  {
+    "goolord/alpha-nvim",
+    config = function()
+      require("alpha").setup(require("alpha.themes.startify").config)
+    end,
+  },
+  {
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.8",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      {
+        "nvim-telescope/telescope-fzf-native.nvim",
+        build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release",
+      },
     },
-    {
-      "catgoose/nvim-colorizer.lua",
-      event = "BufReadPre",
-    },
-    'lervag/vimtex',
-    {
-      'goolord/alpha-nvim',
-      config = function ()
-        require'alpha'.setup(require'alpha.themes.startify'.config)
-      end
-    },
-    {
-    'nvim-telescope/telescope.nvim', tag = '0.1.8',
-      dependencies = {
-        'nvim-lua/plenary.nvim',
-        {
-          'nvim-telescope/telescope-fzf-native.nvim',
-          build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release'
-        }
-      }
-    },
-    {
-  'stevearc/conform.nvim',
-  opts = {},
-}
+  },
+  {
+    "stevearc/conform.nvim",
+    opts = {},
+  },
 }
 
 -- Setup lazy.nvim

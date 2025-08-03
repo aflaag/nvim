@@ -1,14 +1,14 @@
 local actions = require("telescope.actions")
 
-require('telescope').setup{
+require("telescope").setup({
   defaults = {
     mappings = {
       i = {
-        [":q"] = actions.close
+        [":q"] = actions.close,
       },
       n = {
-        [":q"] = actions.close
-      }
-    }
-  }
-}
+        [":q"] = actions.close,
+      },
+    },
+  },
+})
