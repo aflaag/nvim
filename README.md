@@ -1,10 +1,11 @@
 # nvim
 
+- airline
+    - change theme (now it sucks)
+
 - general
     - cool buffer switch
     - check neovim config from the beginning again
-- buffers
-    - :q doesn't close buffers lol??
 - treesitter
     - maybe set it up?
 - CoC

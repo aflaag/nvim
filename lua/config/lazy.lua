@@ -29,8 +29,6 @@ local plugins = {
     'vim-airline/vim-airline-themes',
     'ap/vim-css-color',
     'morhetz/gruvbox',
-    { 'junegunn/fzf', build = ":call fzf#install()" },
-    { 'junegunn/fzf.vim' },
     { 'mg979/vim-visual-multi', branch = 'master' },
     'lewis6991/gitsigns.nvim',
     { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
@@ -48,6 +46,16 @@ local plugins = {
       event = "BufReadPre",
     },
     'lervag/vimtex',
+    {
+      'goolord/alpha-nvim',
+      config = function ()
+        require'alpha'.setup(require'alpha.themes.startify'.config)
+      end
+    },
+    {
+    'nvim-telescope/telescope.nvim', tag = '0.1.8',
+      dependencies = { 'nvim-lua/plenary.nvim' }
+    },
 }
 
 -- Setup lazy.nvim
