@@ -95,14 +95,14 @@ vim.api.nvim_command('noremap ff <cmd>Telescope find_files theme=dropdown<CR>')
 
 -- bufferline
 
-vim.api.nvim_command('noremap <Space>1 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(1, true) <CR>')
-vim.api.nvim_command('noremap <Space>2 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(2, true) <CR>')
-vim.api.nvim_command('noremap <Space>3 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(3, true) <CR>')
-vim.api.nvim_command('noremap <Space>4 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(4, true) <CR>')
-vim.api.nvim_command('noremap <Space>5 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(5, true) <CR>')
-vim.api.nvim_command('noremap <Space>6 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(6, true) <CR>')
-vim.api.nvim_command('noremap <Space>7 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(7, true) <CR>')
-vim.api.nvim_command('noremap <Space>8 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(8, true) <CR>')
-vim.api.nvim_command('noremap <Space>9 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(9, true) <CR>')
+vim.api.nvim_command('noremap <Space>1 <cmd>lua require\'bufferline\'.go_to_buffer(1, true) <CR>')
+vim.api.nvim_command('noremap <Space>2 <cmd>lua require\'bufferline\'.go_to_buffer(2, true) <CR>')
+vim.api.nvim_command('noremap <Space>3 <cmd>lua require\'bufferline\'.go_to_buffer(3, true) <CR>')
+vim.api.nvim_command('noremap <Space>4 <cmd>lua require\'bufferline\'.go_to_buffer(4, true) <CR>')
+vim.api.nvim_command('noremap <Space>5 <cmd>lua require\'bufferline\'.go_to_buffer(5, true) <CR>')
+vim.api.nvim_command('noremap <Space>6 <cmd>lua require\'bufferline\'.go_to_buffer(6, true) <CR>')
+vim.api.nvim_command('noremap <Space>7 <cmd>lua require\'bufferline\'.go_to_buffer(7, true) <CR>')
+vim.api.nvim_command('noremap <Space>8 <cmd>lua require\'bufferline\'.go_to_buffer(8, true) <CR>')
+vim.api.nvim_command('noremap <Space>9 <cmd>lua require\'bufferline\'.go_to_buffer(9, true) <CR>')
 
 vim.api.nvim_command('nnoremap cq <cmd>bdelete<CR>')
