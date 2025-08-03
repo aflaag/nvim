@@ -8,6 +8,7 @@ require("plugins.bufferline-config")
 require("plugins.Comment-config")
 require("plugins.todo-comments-config")
 require("plugins.nvim-colorizer-config")
+require("plugins.telescope-config")
 
 
 
@@ -30,21 +31,20 @@ vim.api.nvim_command('noremap <Space>j <C-W><C-J>')
 vim.api.nvim_command('noremap <Space>k <C-W><C-K>')
 vim.api.nvim_command('noremap <Space>l <C-W><C-L>')
 
+vim.api.nvim_command('noremap J <cmd>e#<CR>') -- go to previous buffer
+
 vim.api.nvim_command('nnoremap <ScrollWheelUp> 2<C-Y>2k')
 vim.api.nvim_command('nnoremap <ScrollWheelDown> 2<C-E>2j')
 vim.api.nvim_command('nnoremap <S-ScrollWheelUp> 2h')
 vim.api.nvim_command('nnoremap <S-ScrollWheelDown> 2l')
 
+vim.api.nvim_command('nnoremap <Tab> >>')
+vim.api.nvim_command('nnoremap <S-Tab> <<')
+
 vim.api.nvim_command('inoremap <ScrollWheelUp> <Up>')
 vim.api.nvim_command('inoremap <ScrollWheelDown> <Down>')
 vim.api.nvim_command('inoremap <S-ScrollWheelUp> <Left><Left>')
 vim.api.nvim_command('inoremap <S-ScrollWheelDown> <Right><Right>')
-
-vim.api.nvim_command('tnoremap <Esc> <C-\\><C-n>')
-vim.api.nvim_command('tnoremap jj <C-\\><C-n>')
-
-vim.api.nvim_command('nnoremap <Tab> >>')
-vim.api.nvim_command('nnoremap <S-Tab> <<')
 
 vim.api.nvim_command('inoremap jj <Esc>')
 vim.api.nvim_command('inoremap <C-BS> <C-W>')
@@ -53,6 +53,9 @@ vim.api.nvim_command('inoremap <S-Tab> <C-d>')
 vim.api.nvim_command('vnoremap cc "+y')
 vim.api.nvim_command('vnoremap <Tab> >gv')
 vim.api.nvim_command('vnoremap <S-Tab> <gv')
+
+vim.api.nvim_command('tnoremap <Esc> <C-\\><C-n>')
+vim.api.nvim_command('tnoremap jj <C-\\><C-n>')
 
 
 
@@ -76,9 +79,9 @@ vim.api.nvim_command('let g:airline_powerline_fonts = 1') -- set different chara
 
 -- nvim-tree
 
-vim.api.nvim_command('noremap tt :NvimTreeToggle <CR>')
-vim.api.nvim_command('noremap tf :NvimTreeFindFile <CR>')
-vim.api.nvim_command('noremap tr :NvimTreeRefresh <CR>')
+vim.api.nvim_command('noremap tt <cmd>NvimTreeToggle <CR>')
+vim.api.nvim_command('noremap tf <cmd>NvimTreeFindFile <CR>')
+vim.api.nvim_command('noremap tr <cmd>NvimTreeRefresh <CR>')
 
 vim.opt.splitright = true -- prevent nvim-tree from opening on the right on the first buffer
 
@@ -86,20 +89,20 @@ vim.opt.splitright = true -- prevent nvim-tree from opening on the right on the 
 
 -- telescope
 
-vim.api.nvim_command('noremap ff :Telescope find_files <CR>')
+vim.api.nvim_command('noremap ff <cmd>Telescope find_files theme=dropdown<CR>')
 
 
 
 -- bufferline
 
-vim.api.nvim_command('noremap <Space>1 <cmd> :lua require\'bufferline\'.go_to_buffer(1, true) <CR>')
-vim.api.nvim_command('noremap <Space>2 <cmd> :lua require\'bufferline\'.go_to_buffer(2, true) <CR>')
-vim.api.nvim_command('noremap <Space>3 <cmd> :lua require\'bufferline\'.go_to_buffer(3, true) <CR>')
-vim.api.nvim_command('noremap <Space>4 <cmd> :lua require\'bufferline\'.go_to_buffer(4, true) <CR>')
-vim.api.nvim_command('noremap <Space>5 <cmd> :lua require\'bufferline\'.go_to_buffer(5, true) <CR>')
-vim.api.nvim_command('noremap <Space>6 <cmd> :lua require\'bufferline\'.go_to_buffer(6, true) <CR>')
-vim.api.nvim_command('noremap <Space>7 <cmd> :lua require\'bufferline\'.go_to_buffer(7, true) <CR>')
-vim.api.nvim_command('noremap <Space>8 <cmd> :lua require\'bufferline\'.go_to_buffer(8, true) <CR>')
-vim.api.nvim_command('noremap <Space>9 <cmd> :lua require\'bufferline\'.go_to_buffer(9, true) <CR>')
+vim.api.nvim_command('noremap <Space>1 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(1, true) <CR>')
+vim.api.nvim_command('noremap <Space>2 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(2, true) <CR>')
+vim.api.nvim_command('noremap <Space>3 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(3, true) <CR>')
+vim.api.nvim_command('noremap <Space>4 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(4, true) <CR>')
+vim.api.nvim_command('noremap <Space>5 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(5, true) <CR>')
+vim.api.nvim_command('noremap <Space>6 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(6, true) <CR>')
+vim.api.nvim_command('noremap <Space>7 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(7, true) <CR>')
+vim.api.nvim_command('noremap <Space>8 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(8, true) <CR>')
+vim.api.nvim_command('noremap <Space>9 <cmd> <cmd>lua require\'bufferline\'.go_to_buffer(9, true) <CR>')
 
-vim.api.nvim_command('nnoremap cq :bdelete<CR>')
+vim.api.nvim_command('nnoremap cq <cmd>bdelete<CR>')
