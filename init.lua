@@ -2,12 +2,12 @@
 
 require("config.lazy")
 
-require("plugins.nvim-tree-config")
+require("plugins.nvim-tree")
 require("plugins.bufferline")
-require("plugins.Comment-config")
-require("plugins.nvim-colorizer-config")
-require("plugins.telescope-config")
-require("plugins.conform-config")
+require("plugins.Comment")
+require("plugins.nvim-colorizer")
+require("plugins.telescope")
+require("plugins.conform")
 
 -- navigation
 
