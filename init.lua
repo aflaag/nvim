@@ -8,6 +8,7 @@ require("plugins.Comment")
 require("plugins.nvim-colorizer")
 require("plugins.telescope")
 require("plugins.conform")
+require("plugins.lualine")
 
 -- navigation
 
@@ -66,8 +67,6 @@ vim.api.nvim_command("autocmd FileType * setlocal formatoptions-=c formatoptions
 
 vim.api.nvim_command("colorscheme gruvbox")
 
-vim.api.nvim_command("let g:airline_powerline_fonts = 1") -- set different characters for airline
-
 -- nvim-tree
 
 vim.api.nvim_command("noremap tt <cmd>NvimTreeToggle <CR>")
@@ -78,7 +77,9 @@ vim.opt.splitright = true -- prevent nvim-tree from opening on the right on the 
 
 -- telescope
 
-vim.api.nvim_command("noremap ff <cmd>Telescope find_files theme=dropdown<CR>")
+vim.api.nvim_command("noremap ff <cmd>Telescope find_files<CR>")
+
+vim.api.nvim_command("noremap df <cmd>Telescope live_grep<CR>")
 
 -- bufferline
 

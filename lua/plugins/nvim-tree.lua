@@ -8,7 +8,7 @@ local function key_bindings(bufnr)
   api.config.mappings.default_on_attach(bufnr) -- use all default mappings
 
   vim.keymap.set("n", "f", "<Nop>", opts("Remap for filters"))
-  vim.keymap.set("n", "ff", "<cmd>Telescope find_files theme=dropdown <CR>", opts("Open Telescope"))
+  vim.keymap.set("n", "ff", "<cmd>Telescope find_files<CR>", opts("Open Telescope"))
 end
 
 require("nvim-tree").setup({

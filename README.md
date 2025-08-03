@@ -1,28 +1,21 @@
 # nvim
 
 - general
-    - add a way to change the size of the tab
-    - scroll coc with mouse
-    - consider rewriting init.lua with remaps of neovim instead of vim itself maybe?
-    - check ALL extensions
+  - consider rewriting init.lua with remaps of neovim instead of vim itself maybe?
 
-- airline
-    - change theme (now it sucks)
+- alpha nvim
+  - center the damn thing
 
 - markdown preview
-    - load the extension
+  - load the extension
 
 - treesitter
-    - maybe set it up?
+  - maybe set it up?
 
 - CoC
-    - do i need it?
-    - how to scroll documentation
-    - ctrl + y thing
-
-- todo-comments
-    - set up the colors or something
+  - do i need it?
+  - how to scroll documentation
+  - ctrl + y thing
 
 - telescope
-    - if i C-BS do C-W please
-
+  - if i C-BS do C-W please

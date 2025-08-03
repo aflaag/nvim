@@ -3,11 +3,12 @@ require("conform").setup({
     lua = { "stylua" },
     python = { "isort", "black" },
     rust = { "rustfmt", lsp_format = "fallback" },
-    -- javascript = { "prettierd", "prettier", stop_after_first = true },
-    -- latex = { "tex-fmt" },
+    nix = { "nixfmt" },
+    markdown = { "markdownlint" },
+    bib = { "bibtex-tidy" },
+    -- tex = { "latexindent" },
   },
   format_on_save = {
-    timeout_ms = 500,
     lsp_format = "fallback",
   },
 })

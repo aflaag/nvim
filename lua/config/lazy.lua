@@ -23,16 +23,28 @@ vim.g.maplocalleader = "\\"
 
 local plugins = {
   "nvim-tree/nvim-web-devicons",
-  { "nvim-tree/nvim-tree.lua", dependencies = "nvim-tree/nvim-web-devicons" },
-  { "neoclide/coc.nvim", branch = "release" },
-  "vim-airline/vim-airline",
-  "vim-airline/vim-airline-themes",
-  "ap/vim-css-color",
   "morhetz/gruvbox",
-  { "mg979/vim-visual-multi", branch = "master" },
   "lewis6991/gitsigns.nvim",
-  { "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
   "numToStr/Comment.nvim",
+  "lervag/vimtex",
+
+  {
+    "nvim-tree/nvim-tree.lua",
+    dependencies = "nvim-tree/nvim-web-devicons",
+  },
+  {
+    "neoclide/coc.nvim",
+    branch = "release",
+  },
+  {
+    "nvim-lualine/lualine.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
+  {
+    "akinsho/bufferline.nvim",
+    version = "*",
+    dependencies = "nvim-tree/nvim-web-devicons",
+  },
   {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
@@ -45,7 +57,6 @@ local plugins = {
     "catgoose/nvim-colorizer.lua",
     event = "BufReadPre",
   },
-  "lervag/vimtex",
   {
     "goolord/alpha-nvim",
     config = function()
@@ -67,14 +78,23 @@ local plugins = {
     "stevearc/conform.nvim",
     opts = {},
   },
+  {
+    "mason-org/mason.nvim",
+    opts = {
+      ui = {
+        icons = {
+          package_installed = "✓",
+          package_pending = "➜",
+          package_uninstalled = "✗",
+        },
+      },
+    },
+  },
 }
 
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = plugins,
-  -- Configure any other settings here. See the documentation for more details.
-  -- colorscheme that will be used when installing plugins.
   install = { colorscheme = { "habamax" } },
-  -- automatically check for plugin updates
   checker = { enabled = true },
 })
