@@ -6,6 +6,7 @@ require("conform").setup({
     nix = { "nixfmt" },
     markdown = { "markdownlint" },
     bib = { "bibtex-tidy" },
+    css = { "prettierd" },
     -- tex = { "latexindent" },
   },
   format_on_save = {
