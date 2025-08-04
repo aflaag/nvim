@@ -6,5 +6,11 @@ require("mason-tool-installer").setup({
     "markdownlint",
     "nixfmt",
     "stylua",
+
+    "nil",
+    "lua-language-server",
+    "pyright",
+    "rust-analyzer",
+    "texlab",
   },
 })

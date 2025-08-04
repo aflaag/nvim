@@ -33,10 +33,10 @@ local plugins = {
     "nvim-tree/nvim-tree.lua",
     dependencies = "nvim-tree/nvim-web-devicons",
   },
-  {
-    "neoclide/coc.nvim",
-    branch = "release",
-  },
+  -- {
+  --   "neoclide/coc.nvim",
+  --   branch = "release",
+  -- },
   {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
