@@ -9,10 +9,5 @@
 - treesitter
   - maybe set it up?
 
-- CoC
-  - do i need it?
-  - how to scroll documentation
-  - ctrl + y thing
-
 - telescope
   - if i C-BS do C-W please

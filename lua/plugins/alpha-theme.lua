@@ -25,7 +25,7 @@ local section_mru = {
 }
 
 local header = theta.header
-header.val = require("ascii").art.text.neovim.sharp
+header.val = require("ascii").art.text.neovim.ansi_shadow
 
 local config = {
   layout = {
