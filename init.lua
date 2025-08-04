@@ -5,7 +5,6 @@ require("config.lazy")
 require("plugins.nvim-tree")
 require("plugins.bufferline")
 require("plugins.Comment")
-require("plugins.nvim-colorizer")
 require("plugins.telescope")
 require("plugins.conform")
 require("plugins.lualine")
@@ -77,9 +76,10 @@ vim.opt.splitright = true -- prevent nvim-tree from opening on the right on the 
 
 -- telescope
 
-vim.api.nvim_command("noremap ff <cmd>Telescope find_files<CR>")
-
-vim.api.nvim_command("noremap df <cmd>Telescope live_grep<CR>")
+vim.api.nvim_command("noremap ff <cmd>Telescope find_files theme=dropdown<CR>")
+vim.api.nvim_command("noremap rg <cmd>Telescope live_grep theme=dropdown<CR>")
+vim.api.nvim_command("noremap U <cmd>Telescope undo theme=dropdown<CR>")
+vim.api.nvim_command("noremap cp <cmd>Telescope neoclip theme=dropdown<CR>")
 
 -- bufferline
 

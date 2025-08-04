@@ -56,11 +56,14 @@ local plugins = {
   {
     "catgoose/nvim-colorizer.lua",
     event = "BufReadPre",
+    config = function()
+      require("colorizer").setup()
+    end,
   },
   {
     "goolord/alpha-nvim",
     config = function()
-      require("alpha").setup(require("alpha.themes.startify").config)
+      require("alpha").setup(require("plugins.alpha-theme").config)
     end,
   },
   {
@@ -72,6 +75,7 @@ local plugins = {
         "nvim-telescope/telescope-fzf-native.nvim",
         build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release",
       },
+      "debugloop/telescope-undo.nvim",
     },
   },
   {
@@ -90,9 +94,31 @@ local plugins = {
       },
     },
   },
+  {
+    "AckslD/nvim-neoclip.lua",
+    dependencies = {
+      { "nvim-telescope/telescope.nvim" },
+    },
+    config = function()
+      require("neoclip").setup()
+    end,
+  },
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {},
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+    },
+  },
+  {
+    "MaximilianLloyd/ascii.nvim",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+    },
+  },
 }
 
--- Setup lazy.nvim
 require("lazy").setup({
   spec = plugins,
   install = { colorscheme = { "habamax" } },

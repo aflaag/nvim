@@ -3,9 +3,6 @@
 - general
   - consider rewriting init.lua with remaps of neovim instead of vim itself maybe?
 
-- alpha nvim
-  - center the damn thing
-
 - markdown preview
   - load the extension
 
