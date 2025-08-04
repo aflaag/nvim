@@ -1,10 +1,13 @@
 # nvim
 
-- general
-  - consider rewriting init.lua with remaps of neovim instead of vim itself maybe?
+## general
 
-- telescope
-  - if i C-BS do C-W please
+- consider rewriting init.lua with remaps of neovim instead of vim itself maybe?
 
-- noice
-  - if i C-BS do C-W please
+## telescope
+
+- if i C-BS do C-W please
+
+## noice
+
+- if i C-BS do C-W please
