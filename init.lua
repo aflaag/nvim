@@ -8,6 +8,7 @@ require("plugins.Comment")
 require("plugins.telescope")
 require("plugins.conform")
 require("plugins.lualine")
+require("plugins.mason-tool-installer")
 
 -- navigation
 

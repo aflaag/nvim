@@ -27,6 +27,7 @@ local plugins = {
   "lewis6991/gitsigns.nvim",
   "numToStr/Comment.nvim",
   "lervag/vimtex",
+  "WhoIsSethDaniel/mason-tool-installer.nvim",
 
   {
     "nvim-tree/nvim-tree.lua",
