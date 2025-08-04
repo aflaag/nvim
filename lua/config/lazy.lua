@@ -33,10 +33,6 @@ local plugins = {
     "nvim-tree/nvim-tree.lua",
     dependencies = "nvim-tree/nvim-web-devicons",
   },
-  -- {
-  --   "neoclide/coc.nvim",
-  --   branch = "release",
-  -- },
   {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -117,6 +113,24 @@ local plugins = {
     dependencies = {
       "MunifTanjim/nui.nvim",
     },
+  },
+  {
+    "saghen/blink.cmp",
+    dependencies = { "rafamadriz/friendly-snippets" },
+    version = "1.*",
+    opts = {
+      keymap = {
+        preset = "enter",
+
+        ["<S-Tab>"] = { "select_prev", "fallback" },
+        ["<Tab>"] = { "select_next", "fallback" },
+      },
+
+      appearance = {
+        nerd_font_variant = "mono",
+      },
+    },
+    opts_extend = { "sources.default" },
   },
 }
 
