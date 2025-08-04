@@ -133,6 +133,12 @@ local plugins = {
     },
     opts_extend = { "sources.default" },
   },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    branch = "master",
+    lazy = false,
+    build = ":TSUpdate",
+  },
 }
 
 require("lazy").setup({
