@@ -13,8 +13,6 @@ require("plugins.lsp")
 
 -- navigation
 
-vim.keymap.set("n", "j", "jzz", { noremap = true })
-
 vim.api.nvim_command("noremap j jzz")
 vim.api.nvim_command("noremap k kzz")
 vim.api.nvim_command("noremap { {zz")
