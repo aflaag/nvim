@@ -153,6 +153,7 @@ local plugins = {
       },
     },
   },
+  { "typicode/bg.nvim", lazy = false },
 }
 
 require("lazy").setup({
