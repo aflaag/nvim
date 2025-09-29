@@ -7,7 +7,7 @@ require("conform").setup({
     markdown = { "markdownlint" },
     bib = { "bibtex-tidy" },
     css = { "prettierd" },
-    -- tex = { "latexindent" },
+    -- tex = {},
   },
   format_on_save = {
     lsp_format = "fallback",
