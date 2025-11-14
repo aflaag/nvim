@@ -10,6 +10,7 @@ require("plugins.conform")
 require("plugins.lualine")
 require("plugins.mason-tool-installer")
 require("plugins.lsp")
+require("plugins.vimtex")
 
 -- navigation
 
