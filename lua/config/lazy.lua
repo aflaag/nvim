@@ -25,10 +25,13 @@ local plugins = {
   "nvim-tree/nvim-web-devicons",
   "morhetz/gruvbox",
   "lewis6991/gitsigns.nvim",
-  "numToStr/Comment.nvim",
+  -- "numToStr/Comment.nvim",
   "lervag/vimtex",
   "WhoIsSethDaniel/mason-tool-installer.nvim",
 
+  {
+    'nvim-mini/mini.nvim', version = false
+  },
   {
     "nvim-tree/nvim-tree.lua",
     dependencies = "nvim-tree/nvim-web-devicons",

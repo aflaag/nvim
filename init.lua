@@ -4,7 +4,7 @@ require("config.lazy")
 
 require("plugins.nvim-tree")
 require("plugins.bufferline")
-require("plugins.Comment")
+require("plugins.mini-comment")
 require("plugins.telescope")
 require("plugins.conform")
 require("plugins.lualine")
