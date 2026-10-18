@@ -60,6 +60,7 @@ vim.api.nvim_command("tnoremap jj <C-\\><C-n>")
 -- settings
 
 vim.api.nvim_command("set nu rnu") -- enable hybrid numbers
+vim.opt.cursorline = true -- highlight the current cursor line
 vim.api.nvim_command("set mouse=a") -- enable mouse
 vim.api.nvim_command("set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab") -- tabs as 4 spaces
 vim.api.nvim_command("command Os split") -- alias for horizontal split
