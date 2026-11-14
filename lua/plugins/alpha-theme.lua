@@ -1,6 +1,9 @@
 local alpha = require("alpha")
 local theta = require("alpha.themes.theta")
 
+theta.file_icons.provider = "devicons"
+theta.file_icons.highlight = true
+
 local section_mru = {
   type = "group",
   val = {

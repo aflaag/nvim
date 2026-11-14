@@ -25,7 +25,6 @@ local plugins = {
   "nvim-tree/nvim-web-devicons",
   "morhetz/gruvbox",
   "lewis6991/gitsigns.nvim",
-  -- "numToStr/Comment.nvim",
   "lervag/vimtex",
   "WhoIsSethDaniel/mason-tool-installer.nvim",
 
@@ -152,7 +151,7 @@ local plugins = {
         function()
           require("which-key").show({ global = false })
         end,
-        desc = "Buffer Local Keymaps (which-key)",
+        desc = "Mostra le scorciatoie del buffer",
       },
     },
   },
